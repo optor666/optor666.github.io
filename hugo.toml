@@ -1,0 +1,4 @@
+baseURL = 'https://optor666.github.io/'
+languageCode = 'en-us'
+title = '湖心亭看雪'
+theme = 'ananke'
