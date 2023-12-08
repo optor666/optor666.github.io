@@ -4,6 +4,7 @@ date = 2023-12-08T11:36:54+08:00
 +++
 # mustache
 [mustache](https://mustache.github.io/) 是一种简单、轻量的模板引擎。
+<!--more-->
 
 mustache 这个单词在英语本身是胡子的意思，而 mustache 模板引擎使用的标签外观类似于胡子的形状，即两个花括号 `{{` 和 `}}`。
 

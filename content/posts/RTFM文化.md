@@ -3,11 +3,12 @@ title = 'RTFM文化'
 date = 2023-12-08T11:39:43+08:00
 +++
 # RTFM
-RTFM 的全程是 Read the Fucking Manual。
+RTFM 的全称是 Read the Fucking Manual。
 
 通常，新手在使用某个软件遇到了问题，但未阅读相关手册、文档，就直接在社区提问，老鸟就会回复：RTFM。
 
 RTFM文化强调了独立、自主学习的重要性，一名合格的软件工程师在提问前应阅读一下[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
+<!--more-->
 
 # Linux Manual
 1. [man1](https://man7.org/linux/man-pages/man1/): 包含了一些常用的用户命令，如 ls、cp、rm 等。
