@@ -12,6 +12,6 @@ theme = 'ananke'
     url = '/scribbles/'
     weight = 2
 [[menu.main]]
-    name = '好读书'
+    name = '读书'
     url = '/readings/'
     weight = 3
