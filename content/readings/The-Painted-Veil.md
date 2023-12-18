@@ -13,4 +13,4 @@ date = 2023-12-12T20:15:14+08:00
 
 一部情感充沛、思想深刻的文学巨著！👍👍👍
 
-{{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20231212201135.png" alt="英-毛姆-《面纱》" title="英-毛姆-《面纱》" >}}
+{{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20231218184241.png" alt="英-毛姆-《面纱》" title="英-毛姆-《面纱》" >}}
