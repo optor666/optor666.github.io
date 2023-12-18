@@ -15,3 +15,7 @@ theme = 'ananke'
     name = '读书'
     url = '/readings/'
     weight = 3
+[[menu.main]]
+    name = '世界地理'
+    url = '/geography/'
+    weight = 4
