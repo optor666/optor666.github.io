@@ -2,8 +2,7 @@
 title = 'Java 源代码生成工具 JavaPoet'
 date = 2023-12-14T22:28:15+08:00
 +++
-# JavaPoet
-[JavaPoet](https://github.com/square/javapoet) 是一个用于生成 Java 源代码的开源工具，它的设计目标是简单、直观且易于使用。
+JavaPoet 是一个用于生成 Java 源代码的开源工具，它的设计目标是简单、直观且易于使用。
 <!--more-->
 使用 JavaPoet，你可以编写类似于 Java 代码的模板来生成相应的源代码文件，而无需手动拼接字符串或处理繁琐的细节。这种方式使得代码生成更加灵活、可读性更高，并且能够减少编写重复代码的工作量。
 
@@ -15,3 +14,5 @@ date = 2023-12-14T22:28:15+08:00
 3. 支持多种代码元素：无论是类、方法、字段还是注解，JavaPoet都能够灵活应对。你可以通过简单的 API 调用，轻松生成各种代码元素。
 4. 与现有代码协同工作：JavaPoet 可以很好地与现有的代码协同工作，通过读取已有的代码结构，生成新的代码，从而使得代码风格保持一致。
 
+# 参考
+1. JavaPoet: [https://github.com/square/javapoet](https://github.com/square/javapoet)
