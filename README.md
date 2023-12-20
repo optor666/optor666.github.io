@@ -16,3 +16,18 @@
 # Google Analytics 4 Course
 1. https://skillshop.exceedlms.com/student/catalog/list?category_ids=6431-google-analytics-4
 2. https://analytics.google.com/analytics/academy/course/6
+
+# 世界地理
+1. 埃及（开罗）
+2. 加利福尼亚
+3. 伦敦
+4. 阿根廷
+5. 洛杉矶
+6. 利马
+7. 拉斯维加斯
+8. 芝加哥
+9. 迈阿密
+10. 波士顿
+11. 纽约
+12. 时代广场
+13. 华尔街
