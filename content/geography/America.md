@@ -17,7 +17,7 @@ date = 2023-12-21T17:52:49+08:00
 {{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20231221181421.png" alt="美国（America）" title="美国（America）" >}}
 
 # 加利福尼亚（California）
-加利福尼亚位于美国西海岸，包含多个有名的城市：
+加利福尼亚位于美国西海岸，左邻太平洋、右邻内达华州，包含多个有名的城市：
 1. 旧金山 San Francisco，以其陡峭的山丘、美丽的海湾和自由女神像而闻名。
 2. 硅谷 Silicon Valley，是美国加利福尼亚州旧金山湾区南部的一片地区，大致从旧金山南部一直延伸到圣塔克拉拉县。
 3. 洛杉矶 Los Angeles，好莱坞电影业的中心。
