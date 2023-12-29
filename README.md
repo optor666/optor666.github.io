@@ -1,5 +1,5 @@
 # Hugo 教程
-1. https://www.giraffeacademy.com/static-site-generators/hugo/taxonomies/
+1. https://www.giraffeacademy.com/static-site-generators/hugo/single-page-templates/
 
 # 个人站长折腾
 1. https://note.qidong.name/2017/07/05/google-analytics-in-hugo/
