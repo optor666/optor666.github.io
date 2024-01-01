@@ -27,8 +27,8 @@ date = 2024-01-01T20:27:48+08:00
 
 关系代词在定语从句中做宾语时，可省略。
 
-| - | 作主语 | 作宾语 | 作定语 |
-| - | - | -| -|
+|  | 作主语 | 作宾语 | 作定语 |
+| - | - | - | - |
 | 指人 | who/that | whom/that | whose |
 | 指物 | which/that | which/that | whose |
 | 指人或物 | that | that | whose |
