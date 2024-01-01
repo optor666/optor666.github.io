@@ -18,7 +18,17 @@
 2. https://analytics.google.com/analytics/academy/course/6
 
 # 世界地理
-3. 伦敦
+1. 英国：伦敦
+    - 英格兰
+        - 伦敦：大本钟
+        - 牛津
+        - 剑桥
+    - 苏格兰
+    - 北爱尔兰、爱尔兰
+2. 法国
+    - 巴黎
+3. 美国
+    - 西雅图 Seattle
 
 # 技术
 1. OAuth 2.0 协议和 Bearer 认证方式

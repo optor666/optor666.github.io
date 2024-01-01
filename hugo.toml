@@ -8,14 +8,18 @@ theme = 'ananke'
     url = '/posts/'
     weight = 1
 [[menu.main]]
-    name = '湖写'
-    url = '/scribbles/'
-    weight = 2
-[[menu.main]]
     name = '读书'
     url = '/readings/'
+    weight = 2
+[[menu.main]]
+    name = '英语'
+    url = '/english/'
     weight = 3
 [[menu.main]]
     name = '世界地理'
     url = '/geography/'
     weight = 4
+[[menu.main]]
+    name = '湖写'
+    url = '/scribbles/'
+    weight = 5
