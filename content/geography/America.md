@@ -64,3 +64,11 @@ date = 2023-12-21T17:52:49+08:00
 
 {{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20231223204917.png" alt="佛罗里达州（Florida）" title="佛罗里达州（Florida）" >}}
 {{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20231223205429.png" alt="佛罗里达州（Florida）" title="佛罗里达州（Florida）" >}}
+
+# 华盛顿州（Washington）
+华盛顿州位于美国西北部，北邻加拿大不列颠哥伦比亚省、南邻俄勒冈州、西邻太平洋、东邻爱达荷州。
+1. 西雅图 Seattle，温带海洋性气候，冬季温和而湿润，夏季相对凉爽。降雨较为常见，这也是西雅图被誉为“雨城”的原因之一。
+    - 知名公司：微软、亚马逊
+
+{{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240102183755.png" alt="华盛顿州（Washington）" title="华盛顿州（Washington）" >}}
+{{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240102183945.png" alt="西雅图 Seattle" title="西雅图 Seattle" >}}
