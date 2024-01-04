@@ -5,10 +5,25 @@ draft = true
 +++
 现代计算机有着漂亮、易用的图形用户界面，普通用户已经不需要再用终端操作计算机了。但是，对于程序员群体来说，终端依然扮演着不可或缺的角色。
 <!--more-->
-# 终端 & 伪终端 & 终端模拟器
-1. 终端（Terminal），是计算机上的一个硬件设备，用于用户与操作系统进行文本或命令交互，现代计算机基本上已经不再提供终端硬件设备了。
-2. 伪终端（Pseudo Terminal，PTY），是计算机上操作系统提供的一个虚拟设备，用于模拟真实终端的行为，本质上它只是文件描述符。
-3. 终端模拟器（Terminal Emulator），是一个图形界面（GUI）程序，用于模拟真实终端的外观。它接收用户输入，并通过伪终端文件描述符将用户输入发送给操作系统。
+# 终端 & 伪终端 & 终端模拟器 & 终端驱动程序 & bash
+1. 终端（Terminal），是计算机上的一个硬件设备，用于用户与操作系统进行文本或命令交互，现代计算机基本上已经不再提供终端硬件设备了，而是使用软件实现的终端模拟器。
+2. 终端模拟器（Terminal Emulator），是一个图形界面（GUI）程序，用于模拟终端硬件设备。终端模拟器使用伪终端来处理用户界面的输入、输出。
+3. 伪终端（Pseudo Terminal，PTY），是计算机上操作系统提供的一个虚拟设备，用于模拟真实终端的行为，本质上它只是文件描述符。
+
+# 终端驱动程序
+1. 在常规模式下，解释 CTRL+C 等特殊字符，将其解释为向前台进程组发送 SIGNAL
+2. 在常规模式下，自动回显用户的输入
+
+# 伪终端
+A pseudoterminal is a virtual device that provides an IPC channel. On one end of the channel is a program that expects to be connected to a terminal device. On the other end is a program that drives the terminal-oriented program by using the channel to send it input and read its output.
+
+## 使用伪终端的程序
+1. terminal emulator
+2. script(1) program
+3. network login service program, such as ssh
+
+# tty & pty
+
 
 # 终端驱动
 1. 不论是真实终端、还是伪终端，都需要驱动程序处理终端设备的输入、输出。
@@ -74,6 +89,8 @@ int tcsetattr(int fd, int optional_actions, const struct termios *termios_p);
 2. more
 3. less
 4. telnet
+5. curses library
+6. ncurses library
 
 # 参考书籍
 1. Strang, J. 1986. Programming with Curses. O’Reilly, Sebastopol, California.
