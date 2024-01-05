@@ -33,6 +33,18 @@ date = 2024-01-02T15:03:20+08:00
     - 操作系统在关机时，会发送 SIGTERM 给所有进程，请求它们正常退出
     - `kill -3 pid` 或者 `kill pid`（注意：这里不需要明确指定 `-SIGTERM`，因为 `-SIGTERM` 是 kill 命令的默认值）
 
+# SIGCONT (Continue) 信号
+- 编号：18
+- 描述：对应于 SIGSTOP，用于恢复被暂停的进程的执行，程序无法自由设置该信号的响应逻辑。
+- 触发方式：
+    - `kill -18 pid` 或者 `kill -SIGCONT pid`
+
+# SIGSTOP (Stop) 信号
+- 编号：19
+- 描述：用于暂停进程的执行，进程将停止在当前状态，并不再执行任何指令，程序无法自由设置该信号的响应逻辑。
+- 触发方式：
+    - `kill -19 pid` 或者 `kill -SIGSTOP pid`
+
 # SIGTSTP (Terminal Stop) 信号
 - 编号：20
 - 描述：用于请求将进程挂起（停止），将进程放到后台运行，程序可以自由设置该信号的响应逻辑。
@@ -42,6 +54,18 @@ date = 2024-01-02T15:03:20+08:00
 - 相关操作：
     - 进程被挂起后，使用 fg 命令可以将其恢复到前台继续运行
     - 进程被挂起后，使用 bg 命令可以令其在后台运行
+
+# SIGTTIN (Terminal Input) 信号
+- 编号：21
+- 描述：后台进程尝试从终端读取输入时，操作系统会向该进程发送 SIGTTIN 信号，程序可以自由设置该信号的响应逻辑。
+- 触发方式：
+    - `kill -21 pid` 或者 `kill -SIGTTIN pid`
+
+# SIGTTOU (Terminal Output) 信号
+- 编号：22
+- 描述：后台进程尝试向终端写入输出时，操作系统会向该进程发送 SIGTTOU 信号，程序可以自由设置该信号的响应逻辑。
+- 触发方式：
+    - `kill -22 pid` 或者 `kill -SIGTTOU pid`
 
 # SIGWINCH (Window Change) 信号
 - 编号：28
