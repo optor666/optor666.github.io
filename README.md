@@ -32,3 +32,10 @@
 
 # 技术
 1. OAuth 2.0 协议和 Bearer 认证方式
+
+## Linux
+1. util-linux: https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/
+2. GNU Coreutils: https://www.gnu.org/software/coreutils/
+## ncurses library
+1. https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html
+2. 《Unix/Linux下 curses 库开发指南》

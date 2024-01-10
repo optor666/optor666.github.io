@@ -47,6 +47,10 @@ static void hi(char *name) {
 主要内容有：标准输入、输出函数。
 
 注意：这里使用的是 FILE 结构体，而非文件描述符。
+
+### 常量
+- stdin（注意：这里使用的是 FILE 结构体，而非文件描述符。）
+
 ### 函数
 - fileno
 - fopen
