@@ -27,6 +27,13 @@ static void hi(char *name) {
 }
 ```
 
+# 变量
+## 外部变量
+extern 关键字修饰的变量为外部变量，当前文件无需为该变量分配内存。
+```
+extern int i;
+```
+
 # 系统库
 系统库函数文档可以使用如下方式查询：
 1. [https://man7.org/linux/man-pages/dir_section_3.html](https://man7.org/linux/man-pages/dir_section_3.html)
@@ -43,6 +50,10 @@ static void hi(char *name) {
 ### 函数
 - open
 
+## [stddef.h](https://man7.org/linux/man-pages/man0/stddef.h.0p.html)
+### 常量
+- NULL
+
 ## stdio.h
 主要内容有：标准输入、输出函数。
 
@@ -56,6 +67,11 @@ static void hi(char *name) {
 - fopen
 - flockfile
 - perror
+
+## [stdlib.h](https://man7.org/linux/man-pages/man0/stdlib.h.0p.html)
+
+### 函数
+- exit
 
 ## string.h
 主要内容有：字符串处理函数。
@@ -77,3 +93,9 @@ static void hi(char *name) {
 ### 常量
 - STDIN_FILENO（注意：这里使用的是文件描述符，而非 FILE 结构体。）
 
+### 函数
+- read
+- write
+
+# 参考
+1. The GNU C Library Reference Manual: [https://www.gnu.org/software/libc/manual/html_node/index.html](https://www.gnu.org/software/libc/manual/html_node/index.html)
