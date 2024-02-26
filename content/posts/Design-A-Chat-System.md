@@ -74,3 +74,5 @@ date = 2024-02-26T09:21:29+08:00
 
 # 参考
 - 《System Design Interview - An Insiders Guide》by Alex Xu, Chapter 12 - Design A Chat System
+- [从无到有：微信后台系统的演进之路](https://www.infoq.cn/article/the-road-of-the-growth-weixin-background)
+- [5 亿用户如何高效沟通？钉钉首次对外揭秘即时消息服务 DTIM](https://www.infoq.cn/article/NfyEB9CF6qL3MQO8CfUL)
