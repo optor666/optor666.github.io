@@ -83,3 +83,34 @@ service 方法主要逻辑如下：
 3. 解析 HTTP 请求头？哪里解析的？
 4. prepareRequest() 方法中处理 HTTP 功能性请求头：Connection、transfer-encoding、Host
 5. 调用 Coyote Adapter 组件的 service 方法处理 Coyote Request 和 Coyote Response。在这里，客户端连接 SocketWrapper 被转换为 Coyote Request 和 Coyote Response。Coyote Adapter 组件由 Catalina 容器的 CoyoteAdapter 实现，从此处理流程就离开了 Coyote 容器，进入了 Cataline 容器。在 Cataline 容器中，只能看到 Coyote Request 和 Coyote Response，而看不到表示客户端连接的 SocketWrapper 组件了。
+
+# Catalina 容器
+## CoyoteAdapter 组件
+CoyoteAdapter 组件实现了 Coyote 容器中的 Adapter 方法，是 Coyote 容器和 Catalina 容器的衔接层。
+
+客户端连接 SocketWrapper 在 Coyote 容器中被转换为 Coyote Request 和 Coyote Response，然后交给 CoyoteAdapter 组件的 service 方法处理。
+
+CoyoteAdapter 组件的 service 方法逻辑如下：
+1. 调用 Mapper 组件，根据请求头中的 Host 为请求关联相应的 Host 容器
+2. 调用 Mapper 组件，根据请求 URI 中的第一段为请求关联相应的 Context 容器
+3. 调用 Mapper 组件，根据请求 URI 中除了第一段之后的内容为请求关联相应的 Wrapper 容器
+4. 执行 Engine 容器的 Pipeline 上的 Valve 组件 StandardEngineValve
+
+## Valve 组件
+### StandardEngineValve 组件
+StandardEngineValve 组件逻辑比较简单：从 Catalina Request 上取得关联的 Host 容器，执行 Host 容器的 Pipeline 上的 Valve 组件。
+
+### StandardHostValve 组件
+StandardHostValve 组件逻辑比较简单：从 Catalina Request 上取得关联的 Context 容器，执行 Context 容器的 Pipeline 上的 Valve 组件。
+
+### StandardContextValve 组件
+StandardContextValve 组件逻辑比较简单：从 Catalina Request 上取得关联的 Wrapper 容器，执行 Wrapper 容器的 Pipeline 上的 Valve 组件。
+
+### StandardWrapperValve 组件
+StandardWrapperValve 组件逻辑如下：
+1. 从自身 Valve 上取得关联的 Wrapper 容器
+2. 分配一个 Servlet 实例，此 Servlet 实例通常便是用户继承 HttpServlet 实现业务逻辑的 Servlet
+3. 创建 FilterChain，执行 FilterChain 的 doFilter 方法，此 FilterChain 中包含了 Tomcat 内置的 Filter 以及用户实现业务逻辑的 Filter。而且，在执行 doFilter 方法时，Catalina Request 和 Catalina Response 被转换为了 ServletRequest 和 ServletResponse
+
+## FilterChain 组件
+请求通过 FilterChain 所有 Filter 之后，FilterChain 会执行业务逻辑的 Servlet 的 service 方法。此时，就开始真正执行用户业务逻辑代码了
