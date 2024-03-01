@@ -39,3 +39,14 @@
 ## ncurses library
 1. https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html
 2. 《Unix/Linux下 curses 库开发指南》
+
+# 八股文
+1. 秒杀系统设计
+2. 四则运算计算器算法
+3. redis rehash 过程
+4. http2 tcp 细节
+5. mysql 死锁发生场景？
+6. mysql 同时 insert 相同主键 ID 引发的死锁场景？
+7. mysql 连接数满了如何分析原因、快速止损
+8. 一条 sql 的执行流程
+9. web 开发漏洞 xss csrf
