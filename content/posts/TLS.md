@@ -12,4 +12,5 @@ draft = true
 - [The Transport Layer Security (TLS) Protocol Version 1.3](https://www.rfcreader.com/#rfc8446)
 
 ## SSL
+- [The Secure Sockets Layer (SSL) Protocol Version 3.0](https://www.rfcreader.com/#rfc6101)
 - [Prohibiting Secure Sockets Layer (SSL) Version 2.0](https://www.rfcreader.com/#rfc6176)

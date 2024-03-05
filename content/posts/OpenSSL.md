@@ -42,7 +42,34 @@ echo 'Data to sign' | openssl dgst -sha256 -verify public_key.pem -signature sig
 openssl dgst -sha256 -verify public_key.pem -signature signature.bin data.txt
 ```
 
-# OpenSSL 创建自定义证书颁发机构 CA
+# 创建自签名 Server 证书
+## 创建 RSA 密钥
+``` Shell
+# 命令 genrsa 用于创建 RSA 密钥，和命令 genpkey -algorithm RSA 相比用法更简单一点
+openssl genrsa -out server.key 2048
+```
+## 创建自签名证书
+``` Shell
+openssl req -new -x509 -key server.key -out server.crt -days 365
+```
+创建自签名证书，也可以分为两步：
+``` Shell 
+# 生成证书签名请求
+openssl req -new -key server.key -out server.csr
+# 使用自己的 key 对证书进行签名
+openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+```
+## 查看证书
+``` Shell
+openssl x509 -in server.crt -text -noout
+```
+## 使用自签名 CA 证书对自签名 Server 证书进行签名
+```
+openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt
+```
+
+# 创建自签名 CA 证书
+创建自签名 CA 证书，和创建自签名 Server 证书类似。
 ## 创建 RSA 密钥
 ``` Shell
 # 命令 genrsa 用于创建 RSA 密钥，和命令 genpkey -algorithm RSA 相比用法更简单一点
@@ -50,21 +77,14 @@ openssl genrsa -out ca.key 2048
 ```
 ## 创建自签名证书
 ``` Shell
-[optor@optor-mbp ca]$ openssl req -new -x509 -key ca.key -out ca.crt -days 3650
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
------
-Country Name (2 letter code) [AU]:CN
-State or Province Name (full name) [Some-State]:HeNan
-Locality Name (eg, city) []:ZhengZhou
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:optor-organization
-Organizational Unit Name (eg, section) []:optor-organization-ca
-Common Name (e.g. server FQDN or YOUR name) []:www.optor-ca.com
-Email Address []:optor@qq.com
+openssl req -new -x509 -key ca.key -out ca.crt -days 3650
+```
+创建自签名证书，也可以分为两步：
+``` Shell 
+# 生成证书签名请求
+openssl req -new -key ca.key -out root_ca.csr
+# 使用自己的 key 对证书进行签名
+openssl x509 -req -days 365 -in ca.csr -signkey ca.key -out ca.crt
 ```
 ## 查看证书
 ``` Shell
