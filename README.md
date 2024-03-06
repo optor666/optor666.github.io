@@ -51,3 +51,4 @@
 8. 一条 sql 的执行流程
 9. web 开发漏洞 xss csrf
 10. JDK 自旋锁细节、synchronized 关键字 JDK 处理优化细节
+11. 常见压缩算法原理、哈夫曼编码

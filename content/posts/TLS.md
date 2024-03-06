@@ -10,6 +10,8 @@ draft = true
 - [The Transport Layer Security (TLS) Protocol Version 1.1](https://www.rfcreader.com/#rfc4346)
 - [The Transport Layer Security (TLS) Protocol Version 1.2](https://www.rfcreader.com/#rfc5246)
 - [The Transport Layer Security (TLS) Protocol Version 1.3](https://www.rfcreader.com/#rfc8446)
+- [Transport Layer Security Protocol Compression Methods](https://www.rfcreader.com/#rfc3749)
+- [A Transport Layer Security (TLS) ClientHello Padding Extension](https://www.rfcreader.com/#rfc7685)
 
 ## SSL
 - [The Secure Sockets Layer (SSL) Protocol Version 3.0](https://www.rfcreader.com/#rfc6101)
