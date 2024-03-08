@@ -1,6 +1,6 @@
 +++
 title = 'RTFM文化'
-date = 2023-12-08T11:39:43+08:00
+date = 2013-12-08T11:39:43+08:00
 +++
 RTFM 的全称是 Read the Fucking Manual。
 

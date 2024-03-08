@@ -23,6 +23,11 @@ draft = true
 ## HKDF
 - [HMAC-based Extract-and-Expand Key Derivation Function (HKDF)](https://www.rfcreader.com/#rfc5869)
 
+## CSR
+
+## CRL
+- [Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://www.rfcreader.com/#rfc5280)
+
 ## SSL
 - [The Secure Sockets Layer (SSL) Protocol Version 3.0](https://www.rfcreader.com/#rfc6101)
 - [Prohibiting Secure Sockets Layer (SSL) Version 2.0](https://www.rfcreader.com/#rfc6176)

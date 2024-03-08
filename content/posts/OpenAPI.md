@@ -1,6 +1,6 @@
 +++
 title = 'OpenAPI'
-date = 2023-12-07T18:11:04+08:00
+date = 2017-12-07T18:11:04+08:00
 +++
 OpenAPI 是一种行业标准，用于规范化描述 RESTful API。
 <!--more-->
