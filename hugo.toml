@@ -2,3 +2,24 @@ baseURL = 'https://optor666.github.io/'
 languageCode = 'en-us'
 title = '湖心亭看雪'
 theme = 'ananke'
+
+[[menu.main]]
+    name = '博客'
+    url = '/posts/'
+    weight = 1
+[[menu.main]]
+    name = '读书'
+    url = '/readings/'
+    weight = 2
+[[menu.main]]
+    name = '英语'
+    url = '/english/'
+    weight = 3
+[[menu.main]]
+    name = '世界地理'
+    url = '/geography/'
+    weight = 4
+[[menu.main]]
+    name = '湖写'
+    url = '/scribbles/'
+    weight = 5
