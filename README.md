@@ -40,6 +40,9 @@
 1. https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html
 2. 《Unix/Linux下 curses 库开发指南》
 
+## 数据库
+1. https://cn.v2ex.com/t/913147
+
 # 八股文
 1. 秒杀系统设计
 2. 四则运算计算器算法
