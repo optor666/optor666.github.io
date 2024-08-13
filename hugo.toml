@@ -3,6 +3,11 @@ languageCode = 'en-us'
 title = '湖心亭看雪'
 theme = 'ananke'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [[menu.main]]
     name = '博客'
     url = '/posts/'
