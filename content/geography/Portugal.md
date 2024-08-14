@@ -14,4 +14,5 @@ date = 2024-08-12T19:33:39+08:00
 - 美食：葡式蛋挞、葡萄牙烤肉
 
 {{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240813164413.png" alt="葡萄牙（Portugal）" title="葡萄牙（Portugal）" >}}
+{{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240813184703.png" alt="葡萄牙（Portugal）" title="葡萄牙（Portugal）" >}}
 {{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240813170110.png" alt="葡萄牙（Portugal）" title="葡萄牙（Portugal）" >}}

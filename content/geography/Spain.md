@@ -13,4 +13,5 @@ date = 2024-08-12T20:33:39+08:00
 - 美食：海鲜饭、西班牙冷汤
 
 {{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240813170842.png" alt=西班牙（Spain）" title=西班牙（Spain）" >}}
+{{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240813184703.png" alt=西班牙（Spain）" title=西班牙（Spain）" >}}
 {{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240813171653.png" alt=西班牙（Spain）" title=西班牙（Spain）" >}}

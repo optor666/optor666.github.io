@@ -13,4 +13,5 @@ date = 2024-08-12T20:33:39+08:00
 - 美食：丹麦酥
 
 {{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240813174349.png" alt=丹麦（Denmark）" title=丹麦（Denmark）" >}}
+{{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240813184850.png" alt=丹麦（Denmark）" title=丹麦（Denmark）" >}}
 {{< optorImg src="https://blog-1259456425.cos.ap-beijing.myqcloud.com/20240813174546.png" alt=丹麦（Denmark）" title=丹麦（Denmark）" >}}
