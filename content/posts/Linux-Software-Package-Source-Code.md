@@ -48,3 +48,10 @@ ubuntu@VM-1-1-ubuntu:~$ cat -n /etc/apt/sources.list
 sudo apt-src install telnetd
 ```
 接下来，就是愉快地阅读 telnet 相关源代码了！
+## Ubuntu Manuals
+除了使用 apt-src 工具，还可以从 Ubuntu Manuals 按图索骥找到软件包的源代码的，下面就以 telnetd 为例说明具体如何操作：
+1. 打开 [Ubuntu Manuals](https://manpages.ubuntu.com/manpages/jammy/)，并选择对应的系统版本；
+2. 因为 man1 是终端命令的文档，所以打开 [man1](https://manpages.ubuntu.com/manpages/jammy/man1/)；
+3. 页面上搜索 telnet 即可找到 [inetutils-telnet](https://manpages.ubuntu.com/manpages/jammy/man1/inetutils-telnet.1.html)；
+4. 点击 [Provided by](https://launchpad.net/ubuntu/jammy/+package/inetutils-telnet)；
+5. 点击 [Source package](https://launchpad.net/ubuntu/+source/inetutils)，即可看到该软件包的在线仓库地址啦，可以直接克隆源代码到本地；
